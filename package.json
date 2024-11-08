@@ -1,0 +1,31 @@
+{
+  "name": "svrjs-mod-starter",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "cz": "commitizen",
+    "lint": "eslint --no-error-on-unmatched-pattern src/**/*.js src/*.js tests/**/*.test.js tests/**/*.js",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.9.1",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "esbuild": "^0.23.1",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.6",
+    "prettier": "^3.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
